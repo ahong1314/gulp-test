@@ -1,0 +1,66 @@
+<!-- global float start -->
+<div class="float" id="float">
+    <div class="float-download">
+        <a href="./appdownload.html"><img src="./img/float/icon-download.png" alt=""></a>
+    </div>
+    <div class="w70 fr">
+        <!-- <a href="javascript:;">
+            <div class="img-float img-app-l">
+                <div class="hov-content" style="background-image: url('./img/appewm.png')"></div>
+            </div>
+        </a> -->
+        <a href="javascript:;">
+            <div class="img-float img-app">
+                <div class="hov-content">
+                    <img src="img/appewm.png" style="width: 100%;" class="cfgQR">
+                </div>
+            </div>
+        </a>
+        <!-- <a href="javascript:;">
+            <div class="img-float img-app-c">
+                <div class="hov-content" style="background-image: url('./img/appewm_old.png')"></div>
+            </div>
+        </a> -->
+
+        <!-- 暫時隱藏
+        <a href="">
+            <div class="img-float img-wechat"></div>
+        </a>
+        -->
+        <a href="javascript:qqService();">
+            <div class="img-float img-qq"></div>
+        </a>
+        <a href="javascript:BBOnlineService();" name="在线客服">
+            <div class="img-float img-customer"></div>
+        </a>
+    </div>
+    <div class="float-tryout">
+        <a href="javascript:guestLogin();"><img src="./img/float/icon-tryout.png" alt=""></a>
+    </div>
+
+    <div id="closeFloat" class="close-btn">
+        <a href="javascript:void(0);">
+        </a>
+    </div>
+</div>
+<div class="float-left">
+    <svg width="0" height="0">
+        <defs>
+            <filter id="goo">
+                <!-- <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur> -->
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+            </filter
+        </defs>
+    </svg>
+    <div class="aside-nav" id="aside-nav">
+        <a href="appdownload.html" class="aside-menu menu-hover2"></a>
+        <a href="about.html" class="menu-item menu-one"></a>
+        <a href="agent.html" class="menu-item menu-two"></a>
+        <a href="activity.html" class="menu-item menu-three"></a>
+        <a href="faq.html" class="menu-item menu-four"></a>
+        <span class="off left-btn"></span>
+    </div>
+</div>
+
+<!-- global float end -->

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <title>
+        <!--#include virtual="/include/index_head_title.html"-->
+    </title>
+    <meta content="<!--#include virtual='/include/index_head_keywords.html'-->" name="keywords">
+    <meta content="<!--#include virtual='/include/index_head_description.html'-->" name="Description">
+    <link rel="stylesheet" href="/static/lib/animate.min.css">
+    <link rel="stylesheet" href="/static/lib/hover-min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/float.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <!--#include virtual="include/radio.html"-->
+    <div class="main reg">
+        <div class="float-bg">
+            <img src="img/ban/ban-hy2.png">
+        </div>
+        <div class="tab-wrap">
+            <div class="container">
+                <div class="tab kind2 clearfix">
+                    <div class="tabctrl">
+                        <a class="active" href="javascript:;">
+                            <p>注册账号</p>
+                        </a>
+                    </div>
+                    <div class="tabmain">
+                        <div class="item">
+                            <h3 class="tit">注册账号</h3>
+                            <div class="regbox">
+                                <div class="regtable">
+                                    <form onsubmit="doRegister(); return false;">
+                                        <div class="tbwrap">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th width="90"></th>
+                                                        <th></th>
+                                                    </tr>
+                                                    <tr id="recoTr">
+                                                        <td>推荐人账号：</td>
+                                                        <td>
+                                                            <input type="text" maxlength="15" id="regRecoUserName" placeholder="非必填">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>账号规则：账号必须为6-15为数字和字母组合</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>*</strong>会员账号：</td>
+                                                        <td>
+                                                            <input type="text" maxlength="15" id="regUsername">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>密码规则：密码长度要有6-20个字符，以及必须含有数字和字母组合</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>*</strong>登录密码：</td>
+                                                        <td>
+                                                            <input type="password" id="regPassword" maxlength="20">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>*</strong>确认密码：</td>
+                                                        <td>
+                                                            <input type="password" maxlength="20" id="password1">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td class="cred">姓名必须与你用于提款的银行户口名字一致，否则无法提款</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>*</strong>真实姓名：</td>
+                                                        <td>
+                                                            <input type="text" id="fullName" maxlength="10">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>提款认证必须，务必记住</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><strong>*</strong>取款密码：</td>
+                                                        <td>
+                                                            <select id="pwd1">
+                                                                <option value="-">-</option>
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                            </select>
+                                                            <select id="pwd2">
+                                                                <option value="-">-</option>
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                            </select>
+                                                            <select id="pwd3">
+                                                                <option value="-">-</option>
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                            </select>
+                                                            <select id="pwd4">
+                                                                <option value="-">-</option>
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="showRegEmail hide">
+                                                        <td></td>
+                                                        <td class="cred">email格式：888888@qq.com</td>
+                                                    </tr>
+                                                    <tr class="hide showRegEmail">
+                                                        <td><strong>*</strong>电子邮箱：</td>
+                                                        <td>
+                                                            <input type="text" id="email" maxlength="30">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hide showRegQQ">
+                                                        <td><strong>*</strong>QQ号码：</td>
+                                                        <td>
+                                                            <input type="text" id="qq" maxlength="20">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hide showRegMobile">
+                                                        <td><strong>*</strong>手机号码：</td>
+                                                        <td>
+                                                            <input type="text" id="phone" maxlength="11">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hide regValiCode">
+                                                        <td><strong>*</strong>验 证 码：</td>
+                                                        <td>
+                                                            <input type="text" class="authimgcode" maxlength="4" id="valiCode">
+                                                            <img src="" alt="" class="imgCode" title="点击更换">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btns">
+                                            <input type="submit" value="注册">
+                                            <input type="reset">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <!--#include virtual="include/login.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+</body>
+
+</html>

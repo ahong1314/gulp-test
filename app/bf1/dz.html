@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <title>
+        <!--#include virtual="/include/index_head_title.html"-->
+    </title>
+    <meta content="<!--#include virtual='/include/index_head_keywords.html'-->" name="keywords">
+    <meta content="<!--#include virtual='/include/index_head_description.html'-->" name="Description">
+    <link rel="stylesheet" href="/static/lib/animate.min.css">
+    <link rel="stylesheet" href="/static/lib/hover-min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/float.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body data-code="DZ">
+    <!--#include virtual="include/header.html"-->
+    <!--#include virtual="include/radio.html"-->
+    <div class="main dz">
+        <!-- <div class="float-bg">
+            <img src="img/ban/ban.png">
+        </div> -->
+        <div class="tab-wrap">
+            <div class="container">
+                <div class="tab kind1 clearfix" id="tab">
+                    <div class="tabctrl"></div>
+                    <div class="tabmain"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <!--#include virtual="include/login.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+    //document ready function
+    $(document).ready(function() {
+        $('.fr > ul > [data-code="DZ"]').addClass('active');
+    });
+    </script>
+</body>
+
+</html>

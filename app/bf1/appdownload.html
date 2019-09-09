@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <title>
+        <!--#include virtual="/include/index_head_title.html"-->
+    </title>
+    <meta content="<!--#include virtual='/include/index_head_keywords.html'-->" name="keywords">
+    <meta content="<!--#include virtual='/include/index_head_description.html'-->" name="Description">
+    <link rel="stylesheet" href="/static/lib/animate.min.css">
+    <link rel="stylesheet" href="/static/lib/hover-min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/float.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <!--#include virtual="include/radio.html"-->
+    <div class="main app">
+        <div class="float-bg">
+            <img src="img/app/maciphone.png">
+        </div>
+        <div class="show-wrap">
+            <div class="container">
+                <div class="infobox">
+                    <div class="tit">APP快速下载</div>
+                    <div class="ewm clearfix">
+                        <div class="fl ctrl" id="ewmCtrl">
+                            <a class="on" href="javascript:;">
+                                <img src="img/app/new.png">
+                            </a>
+                            <a href="javascript:;">
+                                <img src="img/app/classic.png">
+                            </a>
+                        </div>
+                        <div class="fr pic" id="ewmShow">
+                            <a class="cfgQRLink1" href="javascript:;">
+                                <img class="cfgQR1" src="img/appewm.png" alt="扫码下载APP">
+                            </a>
+                            <a class="cfgQRLink2" href="javascript:;">
+                                <img class="cfgQR2" src="img/appewm_old.png" alt="扫码下载APP">
+                            </a>
+                        </div>
+                    </div>
+                    <p>1. 手机扫描二维码，进入APP下载页面，点击下载</p>
+                    <p>2. APP安装及授权请参考本页面下依照指示操作</p>
+                    <div class="hotgames clearfix">
+                        <p class="tit">热门游戏</p>
+                        <a class="tr-i-link" href="javascript:goGame('CP');">
+                            <img src="img/header/icon-game6.png">
+                        </a>
+                        <a class="tr-i-link" href="javascript:goGame('CP');">
+                            <img src="img/header/icon-game4.png">
+                        </a>
+                        <a class="tr-i-link" href="javascript:goGame('CP');">
+                            <img src="img/header/icon-game5.png">
+                        </a>
+                        <a class="tr-i-link" href="javascript:goGame('CP');">
+                            <img src="img/header/icon-game13.png">
+                        </a>
+                        <a class="tr-i-link" href="javascript:goGame('CP');">
+                            <img src="img/header/icon-game2.png">
+                        </a>
+                        <a class="tr-i-link" href="javascript:goGame('CP');">
+                            <img src="img/header/icon-game14.png">
+                        </a>
+                        <a class="tr-i-link" href="javascript:goGame('CP');">
+                            <img src="img/header/icon-game8.png">
+                        </a>
+                        <a class="tr-i-link" href="javascript:goGame('CP');">
+                            <img src="img/header/icon-game15.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="bottompic">
+                    <img src="img/app/6steps.png">
+                    <img src="img/app/iphone_step.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <!--#include virtual="include/login.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+    $("#ewmCtrl a").on('click mouseover', function() {
+        $('#ewmShow a').eq($(this).index()).show().siblings('a').hide();
+        $(this).addClass("on").siblings('a').removeClass('on');
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.DS_Store
+**/.DS_Store
+/temp/
+**/temp/
+/pack/
+**/pack/
+/node_modules/
+**/node_modules/
+/platform/
+**/platform/
+/.project

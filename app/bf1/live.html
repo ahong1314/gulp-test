@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <title>
+        <!--#include virtual="/include/index_head_title.html"-->
+    </title>
+    <meta content="<!--#include virtual='/include/index_head_keywords.html'-->" name="keywords">
+    <meta content="<!--#include virtual='/include/index_head_description.html'-->" name="Description">
+    <link rel="stylesheet" href="/static/lib/animate.min.css">
+    <link rel="stylesheet" href="/static/lib/hover-min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/float.css">
+    <link href="/static/lib/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+<style>
+    .swiper-wrapper{
+        transition-timing-function:linear !important;
+    }
+</style>
+<body data-code="LIVE">
+    <!--#include virtual="include/header.html"-->
+    <!--#include virtual="include/radio.html"-->
+    <div class="main live">
+        <div class="float-bg">
+            <img class="bg-img" src="img/ban/ban.png" alt="">
+            <img class="only" src="img/ban/pic_live_title.png">
+        </div>
+        <div class="list-wrap">
+            <div class="container">
+                <div class="list">
+                    <div class="swiper-container swiper-live">
+                        <div class="swiper-wrapper" id="listlive">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <!--#include virtual="include/login.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+    <script src="/static/lib/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+    //document ready function
+    $(function() {
+        $('.fr > ul > [data-code="LIVE"]').addClass('active');
+    });
+    </script>
+</body>
+
+</html>

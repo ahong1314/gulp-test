@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <title>
+        <!--#include virtual="/include/index_head_title.html"-->
+    </title>
+    <meta content="<!--#include virtual='/include/index_head_keywords.html'-->" name="keywords">
+    <meta content="<!--#include virtual='/include/index_head_description.html'-->" name="Description">
+    <link rel="stylesheet" href="/static/lib/animate.min.css">
+    <link rel="stylesheet" href="/static/lib/hover-min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/float.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body data-code="CENTER">
+    <!--#include virtual="include/header.html"-->
+    <!--#include virtual="include/radio.html"-->
+    <div class="main center">
+        <!-- <div class="float-bg">
+            <img src="img/ban/ban.png">
+        </div> -->
+        <div class="tab-wrap">
+            <div class="container">
+                <div class="tab kind1 clearfix" id="tab">
+                    <div class="tabctrl">
+                        <a class="active" href="javascript:;">
+                            <p>个人中心</p>
+                            <span class="icon-center"></span>
+                        </a>
+                        <a href="javascript:;">
+                            <p>充值</p>
+                            <span class="icon-recharge"></span>
+                        </a>
+                        <a href="javascript:;">
+                            <p>提现</p>
+                            <span class="icon-draw"></span>
+                        </a>
+                        <a href="javascript:;">
+                            <p>额度转换</p>
+                            <span class="icon-change"></span>
+                        </a>
+                        <a href="javascript:;">
+                            <p>投注记录</p>
+                            <span class="icon-record"></span>
+                        </a>
+                        <a href="javascript:;">
+                            <p>消息中心</p>
+                            <span class="icon-message"></span>
+                        </a>
+                        <a href="javascript:;">
+                            <p>建议反馈</p>
+                            <span class="icon-proposal"></span>
+                        </a>
+                    </div>
+                    <div class="tabmain">
+                        <div class="item ">
+                            个人中心
+                        </div>
+                        <div class="item hide">
+                            充值
+                        </div>
+                        <div class="item hide">
+                            提现
+                        </div>
+                        <div class="item hide">
+                            <div class="nav list1">
+                                <p data-name="transformation" class="add-class" style="z-index: 3">额度转换</p>
+                                <p data-name="trans-record" style="z-index: 2">转换记录</p>
+                            </div>
+                            <form class="trans-hidde" action="" onsubmit="">
+                                <div class="time">
+                                    <select name="" id="">
+                                        <option value="转出账户">转出账户</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="转入账户">转入账户</option>
+                                    </select>
+                                    <select class="last" name="" id="">
+                                        <option value="选择状态">选择状态</option>
+                                    </select>
+                                    起止时间：<input style="width:120px" id="start1" type="text" placeholder="请选择开始日期" autocomplete="off"> ——
+                                    <input style="width:120px" id="end1" type="text" placeholder="请选择结束日期" autocomplete="off">
+                                    <input type="submit" value="搜索">
+                                </div>
+                            </form>
+                            <div class="content">
+                                <div class="nav-list focus" id="transformation">
+                                    额度转换过
+                                </div>
+                                <div class="nav-list" id="trans-record">
+                                    <div class="trans-box">
+                                        <ul class="trans-list">
+                                            <li>
+                                                <div class="fl">品台账户余额：<span class="number">329875435</span></div>
+                                                <div class="fr">
+                                                    <div style="border-radius: 5px" class="fr btn">一键回收</div>
+                                                    <p class="fr">将所有账户余额转入平台账户</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="fl">开泰棋牌：<span class="number">329875435</span>
+                                                    <div class="fr btn">回收</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="fl">AG平台：<span class="number">329875435</span>
+                                                    <div class="fr btn">回收</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <form action="" onsubmit="">
+                                        <div class="trans-content">
+                                            <div class="trans">
+                                                <ul>
+                                                    <li class="t-out">
+                                                        <span>转出账户：</span>
+                                                        <select name="" id="">
+                                                            <option value="平台账户">平台账户</option>
+                                                        </select>
+                                                    </li>
+                                                    <li><img src="./img/lobby/trans-icon.png" alt=""></li>
+                                                    <li class="t-in">
+                                                        <span>转入账户：</span>
+                                                        <select name="" id="">
+                                                            <option value="1">开泰棋牌</option>
+                                                            <option value="2">AG棋牌</option>
+                                                        </select>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="max">当前最大可转出额度：<span>7890</span></div>
+                                            <div class="t-quota clearfix">
+                                                <ul>
+                                                    <li><span>转换金额：</span><input type="text"></li>
+                                                    <li>
+                                                        <input type="button" value="100">
+                                                        <input type="button" value="1000">
+                                                        <input type="button" value="10000">
+                                                        <input type="button" value="全部">
+                                                    </li>
+                                                </ul>
+                                                <div class="min">最低转化额度为1</div>
+                                            </div>
+                                        </div>
+                                        <input class="sub" type="submit" value="提交">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item hide">
+                            <div class="nav list2">
+                                <p data-name="all" class="add-class" style="z-index: 3">全部</p>
+                                <p data-name="ag" style="z-index: 2">AG游戏</p>
+                                <p data-name="kait" style="z-index: 1">开泰棋牌</p>
+                            </div>
+                            <form action="" onsubmit="">
+                                <div class="time">
+                                    起止时间：<input id="start" type="text" placeholder="请选择开始日期" autocomplete="off"> ——
+                                    <input id="end" type="text" placeholder="请选择结束日期" autocomplete="off">
+                                    <input type="submit" value="搜索">
+                                </div>
+                            </form>
+                            <div class="content">
+                                <div class="nav-list focus" id="all">
+                                    全部
+                                </div>
+                                <div class="nav-list" id="ag">
+                                    AG游戏
+                                </div>
+                                <div class="nav-list" id="kait">
+                                    开泰棋牌
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item hide">
+                            消息中心
+                        </div>
+                        <div class="item hide">
+                            建议反馈
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="/static/lib/laydate/laydate.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+    //开始时间时间
+    let start = laydate.render({
+        elem: '#start',
+        trigger: 'click', //采用click弹出
+        theme: '#3278F0',
+        done: function(value, date, endDate) {
+            end.config.min = {
+                year: date.year,
+                month: date.month - 1,
+                date: date.date,
+            };
+            end.config.value = {
+                year: date.year,
+                month: date.month - 1,
+                date: date.date,
+            };
+        }
+    });
+
+    let start1 = laydate.render({
+        elem: '#start1',
+        trigger: 'click', //采用click弹出
+        theme: '#3278F0',
+        done: function(value, date, endDate) {
+            end1.config.min = {
+                year: date.year,
+                month: date.month - 1,
+                date: date.date,
+            };
+            end1.config.value = {
+                year: date.year,
+                month: date.month - 1,
+                date: date.date,
+            };
+        }
+    });
+
+    //结束时间
+    let end1 = laydate.render({
+        elem: '#end1',
+        trigger: 'click', //采用click弹出
+        theme: '#3278F0',
+        done: function(value, date, endDate) {
+            start1.config.max = {
+                year: date.year,
+                month: date.month - 1,
+                date: date.date,
+            };
+        }
+    });
+
+    let end = laydate.render({
+        elem: '#end',
+        trigger: 'click', //采用click弹出
+        theme: '#3278F0',
+        done: function(value, date, endDate) {
+            start.config.max = {
+                year: date.year,
+                month: date.month - 1,
+                date: date.date,
+            };
+        }
+    });
+
+    $(document).ready(function() {
+        //左边侧边栏切换
+        $(function() {
+            $('.p-tabgroup > div').hide();
+            $('.p-tabgroup > div:first-of-type').show();
+            $('.p-tab a').click(function(e) {
+                e.preventDefault();
+                var $this = $(this),
+                    tabgroup = '#' + $this.parents('.p-tab').data('tabgroup'),
+                    others = $this.siblings('a'),
+                    target = $this.attr('href');
+                othericon = $this.siblings('a').find('span')
+                icon = $this.children('span')
+                icon.addClass('change-chosed')
+                othericon.removeClass('change-chosed')
+                others.removeClass('active');
+                $this.addClass('active');
+                $(tabgroup).children('div').hide();
+                $(target).show();
+            });
+            //内部切换
+            $(".list1 > p").click(function() {
+                console.log("#" + $(this).attr("data-name"))
+                $(".list1 > p").removeClass("add-class");
+                $(this).addClass("add-class");
+                $("#" + $(this).attr("data-name")).addClass("focus").siblings().removeClass('focus');
+                if ("#" + $(this).attr("data-name") == "#trans-record") {
+                    $('.trans-hidde').css('display', 'none')
+                } else {
+                    $('.trans-hidde').css('display', 'block')
+                }
+            });
+            $(".list2 > p").click(function() {
+                $(".list2 > p").removeClass("add-class");
+                $(this).addClass("add-class");
+                $("#" + $(this).attr("data-name")).addClass("focus").siblings().removeClass('focus');
+            });
+        });
+
+    });
+    </script>
+</body>
+
+</html>

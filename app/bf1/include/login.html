@@ -1,0 +1,37 @@
+<script src="/static/lib/lity/2.3.1/lity.min.js"></script>
+<link rel="stylesheet" href="/static/lib/lity/2.3.1/lity.css">
+<div id="login-app-download" class="login childlogin lity-hide">
+    <div class="login-wrap">
+        <form onsubmit="loginForm();return false;" autocomplete="off">
+            <div class="login-title">
+                <p class="f24">会员登入</p>
+            </div>
+            <div class="login-box">
+                <label for="userName"><img class="img-personal" src="img/index/personal.png" alt=""></label>
+                <input type="text" id="userName" maxlength="15" class="input-account" placeholder="请填写玩家帐号">
+            </div>
+            <div class="login-box">
+                <label for="userPwd"><img class="img-lock" src="img/index/lock.png" alt=""></label>
+                <input type="password" id="userPwd" maxlength="20" class="input-account" placeholder="请填写6-20位密码">
+            </div>
+            <div class="login-box">
+                <label for="loginVcode"><img class="img-verify" src="img/index/verify.png"></label>
+                <input type="text" class="input-code" placeholder="请填写验证码" id="loginVcode" maxlength="4">
+                <span class="button-code hide" id="numberCode"></span>
+                <span class="button-code hide" id="imgCode">
+                    <img src="" class="imgCode" alt="点击更换验证码">
+                </span>
+            </div>
+            <div class="login-box">
+                <input type="submit" value="登录" class="button-login">
+            </div>
+            <div class="login-box">
+                <a class="button-play" href="javascript:guestLogin();">立即试玩</a>
+            </div>
+            <div class="login-register fr">
+                <a href="javascript:BBOnlineService();" class="forget-Password">忘了密码？</a>
+                <a href="./reg.html" class="register">注册新帐号</a>
+            </div>
+        </form>
+    </div>
+</div>

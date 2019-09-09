@@ -1,0 +1,102 @@
+<div class="header">
+    <div class="top">
+        <div class="container clearfix">
+            <div class="fl">
+                <a href="javascript:emailService();">
+                    <img src="./img/header/email-icon.png" alt="客服邮箱">
+                    <span class="ml10 cfgMainEmail"></span>
+                </a>
+                <span class="ml10" style="color: gray">｜</span>
+                <a href="javascript:;">
+                    <img class="ml5" src="./img/header/phone-icon.png" alt="客服电话">
+                    <span class="ml10">24H客服电话 <span class="cfgMainPhone"></span></span>
+                </a>
+            </div>
+            <div class="fr clearfix">
+                <div class="fl quickinfo" id="quickInfo">
+                    <div class="unlogin hide">
+                        <a href="javascript:toLogin();" class="ml10">登陆</a>
+                        <a href="./reg.html" class="ml10">注册</a>
+                    </div>
+                    <div class="logined hide">
+                        欢迎,<span class="username"></span>
+                        <a href="javascript:reloadBalance();" class="ml10">平台余额：<span class="balance"></span><img src="./img/header/icon-reload.png" alt="刷新余额" class="icon-reload"></a>
+                        <a href="javascript:goCenter();" class="ml10">个人中心</a>
+                        <a href="javascript:loginOut();" class="ml10">退出</a>
+                    </div>
+                </div>
+                <div class="fl">
+                    <a href="javascript:qqService();" class="ml5">
+                        <img src="./img/header/qq-icon.png" alt="客服QQ" class="icon-qq">
+                    </a>
+                    <a href="javascript:openWxWin();" class="ml5">
+                        <img src="./img/header/wechat-icon.png" alt="客服微信">
+                    </a>
+                    <a href="javascript:emailService();" class="ml5">
+                        <img src="./img/header/email2-icon.png" alt="客服邮箱">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container clearfix bottom">
+        <div class="logo fl">
+            <a href="./index.html">
+                <img src="./img/logo.png">
+            </a>
+        </div>
+        <div class="menu fr" id="gameMenu">
+            <ul class="clearfix">
+                <li>
+                    <a href="./index.html">
+                        <p class="mt40">首页</p>
+                        <p>HOME</p>
+                    </a>
+                </li>
+                <li data-code="CP" class="gameCate">
+                    <a href="./cp.html">
+                        <p class="mt40">彩票大厅</p>
+                        <p>LOBBY</p>
+                    </a>
+                </li>
+                <li data-code="LIVE" class="gameCate">
+                    <a href="./live.html">
+                        <p class="mt40">真人视讯</p>
+                        <p>LIVE</p>
+                    </a>
+                </li>
+                <li data-code="DZ" class="gameCate">
+                    <a href="./dz.html">
+                        <p class="mt40">电子游艺</p>
+                        <p>GAME</p>
+                    </a>
+                </li>
+                <!-- <li data-code="QP" class="gameCate">
+                    <a href="./qp.html">
+                        <p class="mt40">棋牌游戏</p>
+                        <p>BOARD</p>
+                    </a>
+                </li> -->
+                <li data-code="BY" class="gameCate">
+                    <a href="./by.html">
+                        <p class="mt40">捕鱼</p>
+                        <p>FISHING</p>
+                    </a>
+                </li>
+                <li data-code="SP" class="gameCate">
+                    <a href="./sp.html">
+                        <p class="mt40">体育</p>
+                        <p>SPORTS</p>
+                    </a>
+                </li>
+                <li data-other="activity">
+                    <a class="hot" href="./activity.html">
+                        <img class="pic-hot" src="./img/header/hot.png" alt="">
+                        <p class="mt40">优惠活动</p>
+                        <p>PROMOTION</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

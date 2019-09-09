@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    window.onload = function() {
+        setTimeout(function() {
+            var objName = prompt("输入要打开的项目", "");
+            objName = objName ? objName : 'bf1';
+
+            setTimeout(function() {
+                window.location.href = window.location.href + objName;
+            }, 1000)
+
+        }, 1000)
+
+    }
+    </script>
+</body>
+
+</html>

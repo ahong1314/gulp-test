@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <title>
+        <!--#include virtual="/include/index_head_title.html"-->
+    </title>
+    <meta content="<!--#include virtual='/include/index_head_keywords.html'-->" name="keywords">
+    <meta content="<!--#include virtual='/include/index_head_description.html'-->" name="Description">
+    <link rel="stylesheet" href="/static/lib/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="/static/lib/animate.min.css">
+    <link rel="stylesheet" href="/static/lib/hover-min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/float.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <div class="main index">
+        <section>
+            <div class="lb">
+                <div class="lb-wrap" id="lb_box">
+                    <div class="swiper-container swiper-hall">
+                        <div class="swiper-wrapper">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <!-- 會員登入 -->
+                <div class="container">
+                    <div class="login hide mainlogin" id="mainLogin">
+                        <div class="login-wrap">
+                            <form onsubmit="loginForm();return false;" autocomplete="off">
+                                <div class="login-title">
+                                    <p class="f24">会员登入</p>
+                                </div>
+                                <div class="login-box">
+                                    <label for="userName"><img class="img-personal" src="img/index/personal.png"></label>
+                                    <input type="text" id="userName" maxlength="15" class="input-account" placeholder="请填写玩家帐号">
+                                </div>
+                                <div class="login-box">
+                                    <label for="userPwd"><img class="img-lock" src="img/index/lock.png"></label>
+                                    <input type="password" id="userPwd" maxlength="20" class="input-account" placeholder="请填写6-20位密码">
+                                </div>
+                                <div class="login-box">
+                                    <label for="loginVcode"><img class="img-verify" src="img/index/verify.png"></label>
+                                    <input type="text" class="input-code" placeholder="请填写验证码" id="loginVcode" maxlength="4">
+                                    <span class="button-code hide" id="numberCode"></span>
+                                    <span class="button-code hide" id="imgCode">
+                                        <img src="" class="imgCode" alt="点击更换验证码">
+                                    </span>
+                                </div>
+                                <div class="login-box">
+                                    <input type="submit" value="登录" class="button-login">
+                                </div>
+                                <div class="login-box">
+                                    <a class="button-play" href="javascript:guestLogin();">立即试玩</a>
+                                </div>
+                                <div class="login-register fr">
+                                    <a href="javascript:getPwd();" class="forget-Password">忘了密码？</a>
+                                    <a href="./reg.html" class="register">注册新帐号</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 遊戲介紹 GameDescription -->
+        <section>
+            <div class="gameDescription">
+                <!--#include virtual="include/radio.html"-->
+                <div class="bg1">
+                    <div class="container">
+                        <img src="img/index/bg-1-1.png" height="580" class="bg1-img wow fadeInRight slow delay-01s">
+                        <div class="bg1-title wow fadeInUp slow delay-02s">
+                            <img src="img/index/Title1.png">
+                            <p>彩票投注大厅是国内最大的网上彩票投注站之一，为您提供便捷的彩票购买、分析、等服务，方便您轻松网上买彩票！必发彩票提供时时彩,六合彩,北京单场,竞彩足球,
+                                赛车PK10,世界杯冠军竞猜等彩种的代购,合买,开奖,资讯等服务,投入梦想,注定精彩！</p>
+                            <div class="bg-gameStart">
+                                <a href="cp.html">开始游戏</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg2">
+                    <div class="container">
+                        <img src="img/index/bg-2-1.png" class="bg2-img wow fadeInLeft delay-01s">
+                        <div class="bg2-title wow fadeInUp slow delay-02s">
+                            <img src="img/index/Title2.png">
+                            <p>必发彩票提供 Android / iPhone 手机系统支援，可以用智慧型手機,平板电脑等行動裝置做移動投注, 讓您只要一機在手隨時隨地可以掌握賽況和最佳賠率進行投注...</p>
+                            <div class="bg-gameStart fr">
+                                <a href="appdownload.html">开始游戏</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/index/bg-2.png">
+                </div>
+                <div class="bg3">
+                    <img src="img/index/bg-3-1.png" class="bg3-img wow slideInRight faster delay-01s">
+                    <div class="container">
+                        <div class="bg3-title wow fadeInUp slow delay-02s">
+                            <img src="img/index/Title3.png">
+                            <p>必发彩票向客户提供全球足球完整赛事，提供英超丶西甲丶欧冠丶德甲丶意甲丶中超丶亚冠等联赛直播，另外还提供了全球各个国际的各种联赛直播，提供的绝佳赔率以及刺激赛事 ...</p>
+                            <div class="bg-gameStart">
+                                <a href="sp.html">开始游戏</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 服務優勢 serviceSuperior -->
+        <section>
+            <div class="serviceSuperior">
+                <div class="serviceSuperior-line">
+                    <img src="img/global/banner-line.png">
+                </div>
+                <div class="serviceSuperior-wrap">
+                    <div class="serviceSuperior-img wow zoomIn delay-01s">
+                        <img src="img/index/pic-service.png" class="img-service">
+                    </div>
+                    <div class="serviceSuperior-speed wow zoomIn delay-01s">
+                        <!-- 存款火速到帐 -->
+                        <div class="service-speed-deposit">
+                            <div class="service-speed-deposit-title">
+                                <span class="f18 cf fl">存款火速到帐</span>
+                                <span class="f24 cf fr"><span id="sec">0</span>秒</span>
+                            </div>
+                            <div class="service-speed-progressBar">
+                                <div class="service-speed-progressBar-line" id="secLine"></div>
+                            </div>
+                        </div>
+                        <!-- 取款火速到帐 -->
+                        <div class="service-speed-withdrawal">
+                            <div class="service-speed-withdrawal-title">
+                                <span class="f18 cf fl">取款火速到帐</span>
+                                <span class="f24 cf fr"><span id="min">0.00</span>分</span>
+                            </div>
+                            <div class="service-speed-progressBar">
+                                <div class="service-speed-progressBar-line" id="minLine"></div>
+                            </div>
+                        </div>
+                        <!-- 便捷的银行服务 -->
+                        <div class="service-speed-withdrawal">
+                            <div class="service-speed-withdrawal-title">
+                                <span class="f18 cf fl">便捷的银行服务</span>
+                                <span class="f24 cf fr">35家</span>
+                            </div>
+                            <img src="img/index/pic-bank.png">
+                        </div>
+                    </div>
+                    <div class="service-trade cf wow zoomIn delay-02s">
+                        <p>充值合作多达<span class="fz36 cyellow">35</span>多家银行的主流银行 安全 保证 卓越品质</p>
+                        <img src="img/index/icon-gaminglab.png" class="img-gamingLab">
+                        <img src="img/index/icon-tst.png" class="img-tst">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 服務資訊 service-info -->
+        <section>
+            <div class="service-info">
+                <div class="container">
+                    <div class="service-info1 wow fadeInLeft delay-01s">
+                        <div class="service-info1-box">
+                            <img src="img/index/icon-game.png" class="fl">
+                            <p class="f20 pt5 cf">通讯安全</p>
+                            <p class="f12 cf">数据传送均通给128位SSL加密安全端口，所有数据内部出入严格限制和严密监控。</p>
+                        </div>
+                        <div class="service-info1-box">
+                            <img src="img/index/icon-web.png" class="fl">
+                            <p class="f20 pt5 cf">网站运维</p>
+                            <p class="f12 cf">SSD专业服务器集群，多种技术优化保障运营稳定。</p>
+                        </div>
+                        <div class="service-info1-box">
+                            <img src="img/index/icon-safe.png" class="fl">
+                            <p class="f20 pt5 cf">游戏平台</p>
+                            <p class="f12 cf">最多种种类游戏平台，最高赔率，更人性化功能，更符合时代眼光的设计领跑行业先锋。</p>
+                        </div>
+                    </div>
+                    <div class="service-info2 wow fadeInUp">
+                        <img src="img/index/pic-girl.png">
+                    </div>
+                    <div class="service-info3 wow fadeInRight delay-02s">
+                        <div class="">
+                            <div class="service-info3-box ml40">
+                                <img src="img/index/icon-seviceinfo3.png" class="fl">
+                                <div class="fr">
+                                    <p class="f24 cf">快速存取款</p>
+                                    <p class="f14 mt16 cf">必发彩票位用户提供众多的存取款方式并保障存取过程顺利及时并保障使用资金安全。</p>
+                                </div>
+                            </div>
+                            <div class="service-info3-box ml40">
+                                <img src="img/index/icon-seviceinfo2.png" class="fl">
+                                <div class="fr">
+                                    <p class="f24 cf">安心&amp;省心</p>
+                                    <p class="f14 mt16 cf">必发彩票使用中国银联特级加密系统，确保账号和资金的使用安全。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt30">
+                            <div class="service-info3-box ml40">
+                                <img src="img/index/icon-seviceinfo4.png" class="fl">
+                                <div class="fr">
+                                    <p class="f24 cf">手续费全免</p>
+                                    <p class="f14 mt16 cf">必发彩票与中国银联全面无缝对接，确保账号和资金的使用安全。</p>
+                                </div>
+                            </div>
+                            <div class="service-info3-box ml40">
+                                <img src="img/index/icon-seviceinfo1.png" class="fl">
+                                <div class="fr">
+                                    <p class="f24 cf" style="width:170px">卓越的技术服务</p>
+                                    <p class="f14 mt16 cf">必发彩票拥有最专业的技术团队，保障您全天24小时安全省心游戏。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <script src="/static/lib/wow/wow.min.js?new"></script>
+    <script src="/static/lib/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="/static/lib/float.min.js"></script>
+    <script src="./js/core.js"></script>
+    <script>
+    //document ready function
+    $(function() {
+        //wow js
+        //new WOW().init();
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 146
+        });
+
+        wow.init();
+
+        //line animate
+        var endData = {
+            sec: 18,
+            secLeft: -60,
+            min: 218,
+            minLeft: -20,
+            type: 1
+        }
+
+        var secDom = $('#sec'),
+            secLine = $('#secLine'),
+            minDom = $('#min'),
+            minLine = $('#minLine');
+
+        $(window, document).scroll(function() {
+            console.log(2345)
+            var nowH = $(window).scrollTop();
+            var sWrap = $('.serviceSuperior-wrap');
+
+            var hT = $(sWrap).offset().top,
+                hH = $(sWrap).outerHeight(),
+                wH = $(window).height(),
+                wS = $(this).scrollTop();
+
+            if (!endData.type) {
+                return;
+            }
+            if (wS > (hT + hH - wH)) {
+                secLine.animate({ left: endData.secLeft }, 1200);
+                count1(secDom, endData.sec, 1);
+                endData.type1 = 0;
+            }
+            if (wS > (hT + hH - wH)) {
+                minLine.animate({ left: endData.minLeft }, 1400);
+                var nowNum = minDom.text();
+                count2(minDom, endData.min, 2);
+                endData.type = 0;
+            }
+
+        })
+
+        function count1(dom, num, plusNum) {
+            var nowNum = parseInt(dom.text());
+
+            function run() {
+                if (nowNum < num) {
+                    nowNum += plusNum;
+                    dom.text(nowNum);
+                    setTimeout(run, 67);
+                } else {
+                    return;
+                }
+            }
+            run();
+        }
+
+        function count2(dom, num, plusNum) {
+            var nowNum = dom.text() * 100;
+
+            function run() {
+                if (nowNum < num) {
+                    nowNum += plusNum;
+                    dom.text(nowNum / 100);
+                    setTimeout(run, 10);
+                } else {
+                    return;
+                }
+            }
+            run();
+        }
+
+        $('.fr > ul > li:nth-of-type(1)').addClass('active');
+    });
+    </script>
+</body>
+
+</html>

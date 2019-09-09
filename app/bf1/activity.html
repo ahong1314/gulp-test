@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--#include virtual="include/meta.html"-->
+    <title>
+        <!--#include virtual="/include/index_head_title.html"-->
+    </title>
+    <meta content="<!--#include virtual='/include/index_head_keywords.html'-->" name="keywords">
+    <meta content="<!--#include virtual='/include/index_head_description.html'-->" name="Description">
+    <link rel="stylesheet" href="/static/lib/animate.min.css">
+    <link rel="stylesheet" href="/static/lib/hover-min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/float.css">
+    <!--#include virtual="/include/chkwh.html"-->
+</head>
+
+<body>
+    <!--#include virtual="include/header.html"-->
+    <!--#include virtual="include/radio.html"-->
+    <div class="main activity">
+        <div class="float-bg">
+            <img src="img/ban/bg-acti.png" style="width: 100%">
+        </div>
+        <div class="list-wrap">
+            <div class="container">
+                <div class="list" id="actiList"></div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="include/float.html"-->
+    <!--#include virtual="include/footer.html"-->
+    <!--#include virtual="include/commonJs.html"-->
+    <!--#include virtual="include/login.html"-->
+    <script src="/static/lib/float.min.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+    //document ready function
+    $(document).ready(function() {
+        $('.fr > ul > [data-other="activity"]').addClass('active');
+    });
+    </script>
+</body>
+
+</html>
